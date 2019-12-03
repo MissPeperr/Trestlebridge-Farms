@@ -28,18 +28,7 @@ namespace Trestlebridge.Actions
             else
             {
                 Console.Write($"Adding animal to option {choice}");
-                Thread.Sleep(250);
-                Console.Write(".");
-                Thread.Sleep(250);
-                Console.Write(".");
-                Thread.Sleep(250);
-                Console.Write(".");
-                Thread.Sleep(250);
-                Console.Write(".");
-                Thread.Sleep(250);
-                Console.Write(".");
-                Thread.Sleep(1000);
-                Console.WriteLine();
+                Utils.Loading();
                 Console.WriteLine("Added animal.");
                 farm.GrazingFields[index].AddResource(animal);
             }
