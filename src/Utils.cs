@@ -1,11 +1,12 @@
 using System;
 using System.Linq;
+using System.Threading;
 
 namespace Trestlebridge
 {
     public static class Utils
     {
-        /* 
+        /*
         ** Git Bash, specifically, doesn't like dotnet telling it to clear the console.
         ** If `Console.Clear()` throws an exception, we're making the assumption that it's Git Bash running on a windows machine.
         ** We try explicitly running the clear.exe command. If for some reason that doesn't work,
@@ -32,6 +33,22 @@ namespace Trestlebridge
                     }
                 }
             }
+        }
+
+        public static void Loading()
+        {
+                Thread.Sleep(250);
+                Console.Write(".");
+                Thread.Sleep(250);
+                Console.Write(".");
+                Thread.Sleep(250);
+                Console.Write(".");
+                Thread.Sleep(250);
+                Console.Write(".");
+                Thread.Sleep(250);
+                Console.Write(".");
+                Thread.Sleep(1000);
+                Console.WriteLine();
         }
     }
 }
