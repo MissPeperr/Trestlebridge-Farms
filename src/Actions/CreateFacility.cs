@@ -10,7 +10,7 @@ namespace Trestlebridge.Actions {
             Console.WriteLine ("2. Plowed field");
 
             Console.WriteLine ();
-            Console.WriteLine ("Choose what you want to create");
+            Console.WriteLine ("Choose what you want to create:");
 
             Console.Write ("> ");
             string input = Console.ReadLine ();
